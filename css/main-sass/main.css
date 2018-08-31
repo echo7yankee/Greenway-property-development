@@ -283,6 +283,7 @@ body {
   transition: -webkit-transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  z-index: 999;
 }
 
 .header .show-navbar {
@@ -445,6 +446,10 @@ body {
   }
 }
 
+.about__title {
+  padding: 1.5rem 0;
+}
+
 .about__title-name {
   font-size: 3.5rem;
   text-transform: capitalize;
@@ -492,15 +497,18 @@ body {
 .about__contact {
   width: 23rem;
   margin-bottom: 1.5rem;
+  outline: none;
 }
 
 .about__experience {
   width: 37rem;
+  outline: none;
 }
 
 .about__what {
   margin-top: 1.5rem;
   width: 45rem;
+  outline: none;
 }
 
 @media screen and (min-width: 992px) {

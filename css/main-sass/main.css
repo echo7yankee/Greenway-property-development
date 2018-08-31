@@ -424,6 +424,30 @@ body {
       grid-template-rows: auto 1fr;
 }
 
+/* hide && show about */
+.hide-left {
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.hide-right {
+  -webkit-transform: translateX(150%);
+          transform: translateX(150%);
+  opacity: 0;
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+.show-about {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+/* hide && show about */
 /* grid container */
 .grid-container {
   max-width: 90vw;
@@ -431,6 +455,7 @@ body {
   display: -ms-grid;
   display: grid;
   grid-row-gap: 2rem;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {

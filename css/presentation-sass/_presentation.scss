@@ -9,12 +9,32 @@
   grid-template-rows: auto 1fr;
 }
 
+/* hide && show about */
+.hide-left {
+  transform: translateX(-150%);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.hide-right {
+  transform: translateX(150%);
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.show-about {
+  transform: translateX(0%);
+  opacity: 1;
+}
+/* hide && show about */
+
 /* grid container */
 .grid-container {
   max-width: 90vw;
   margin: 2rem auto;
   display: grid;
   grid-row-gap: 2rem;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 992px) {

@@ -1,0 +1,239 @@
+.header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../img/headerBcg.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  /* Banner */
+  &__banner {
+    width: 60%;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 30vh;
+  }
+
+  &__title {
+    font-family: "Oswald", sans-serif;
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    color: $light-grey;
+    font-weight: 400;
+    text-align: center;
+    display: block;
+    animation: bannerTitle 0.8s ease-in-out;
+  }
+  &__banner-links {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    margin-top: 1.8rem;
+    animation: bannerLinks 0.8s ease-in-out;
+  }
+
+  &__banner-link {
+    text-decoration: none;
+    outline: none;
+  }
+
+  &__banner--contact:link,
+  &__banner--contact:visited {
+    display: block;
+    color: $light-grey;
+    padding: 0.3rem 2.3rem;
+    border: 0.1rem solid $light-grey;
+    background-color: $nature-green;
+    font-size: 3.5rem;
+    border-radius: 0.3rem;
+    opacity: 0.8;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  &__banner--contact:hover {
+    opacity: 1;
+  }
+
+  &__banner--fb:link,
+  &__banner--fb:visited {
+    display: inline-block;
+    font-size: 4.5rem;
+    color: #3b5998;
+    opacity: 0.8;
+    transition: opacity 0.1s ease-in-out;
+  }
+
+  &__banner--fb:hover {
+    opacity: 1;
+  }
+
+  &__banner-number {
+    font-size: 2.4rem;
+    color: $light-grey;
+    margin: 0 3rem;
+    letter-spacing: 0.2rem;
+  }
+  /* End Banner */
+
+  /* Menu */
+  .menu {
+    width: 6rem;
+    height: 6rem;
+    background-color: $nature-green;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 5%;
+    right: 3%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.3s linear;
+    outline: none;
+
+    &__one {
+      width: 50%;
+      height: 0.3rem;
+      background-color: $light-grey;
+      position: relative;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__one:before {
+      content: "";
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grey;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__one:after {
+      content: "";
+      position: absolute;
+      top: -1rem;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grey;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__two {
+      width: 50%;
+      height: 0.3rem;
+      background-color: transparent;
+      position: relative;
+    }
+
+    &__two:before {
+      content: "";
+      position: absolute;
+      top: 0rem;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grey;
+      transform: rotate(45deg);
+      transition: all 0.5s ease-in-out;
+    }
+
+    &__two:after {
+      content: "";
+      position: absolute;
+      top: 0rem;
+      width: 100%;
+      height: 100%;
+      background-color: $light-grey;
+      transform: rotate(-45deg);
+      transition: all 0.5s ease-in-out;
+    }
+  }
+
+  .menu:hover {
+    opacity: 1;
+  }
+  /* End Menu */
+
+  /* Navbar */
+  &__navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 23rem;
+    background-color: $nature-green;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  /* navbar show */
+  .show-navbar {
+    transform: translateX(0%);
+  }
+  /* end navbar show */
+
+  &__logo {
+    width: 23rem;
+    height: auto;
+  }
+
+  &__list {
+    list-style: none;
+    flex: 0 0 70%;
+    width: 100%;
+  }
+
+  &__item {
+    width: 100%;
+    margin-top: 1.2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 0.5rem;
+    width: 10%;
+  }
+
+  &__link:link,
+  &__link:visited {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    font-size: 2rem;
+    color: $light-grey;
+    outline: none;
+    padding: 1rem 1.4rem;
+    transition: all 0.15s linear;
+    letter-spacing: 0.1rem;
+  }
+
+  &__link:hover {
+    background-color: $deepSky-blue;
+    padding-left: 2.5rem;
+  }
+
+  &__number {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    color: $light-grey;
+    letter-spacing: 0.2rem;
+    padding: 1rem 1.4rem;
+    background-color: $deepSky-blue;
+  }
+  /* End Navbar */
+}

@@ -9,6 +9,8 @@ const leftAbout = document.querySelector(".hide-left");
 let leftAboutTop = leftAbout.getBoundingClientRect().top;
 const rightAbout = document.querySelector(".hide-right");
 let rightAboutTop = rightAbout.getBoundingClientRect().top;
+//dynamic date
+const footerDate = document.getElementById("footer__date");
 
 class UiHome {
   hidePreloader() {
@@ -39,3 +41,7 @@ function eventListeners() {
   window.addEventListener("scroll", () => ui.showAbout());
 }
 eventListeners();
+
+//dynamic date
+const date = new Date().getFullYear();
+footerDate.textContent = date;

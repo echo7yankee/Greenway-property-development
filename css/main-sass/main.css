@@ -167,6 +167,7 @@ body {
   height: 6rem;
   background-color: #62a836;
   border-radius: 50%;
+  border: 0.1rem solid #e3e2df;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -422,6 +423,7 @@ body {
       grid-template-columns: 100%;
   -ms-grid-rows: auto 1fr;
       grid-template-rows: auto 1fr;
+  min-height: 60vw;
 }
 
 /* hide && show about */
@@ -467,7 +469,7 @@ body {
     grid-gap: 2rem;
   }
   .grid-container {
-    max-width: 90vw;
+    max-width: 95vw;
   }
 }
 
@@ -489,16 +491,17 @@ body {
 
 .about__title-text {
   letter-spacing: 0.1rem;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   margin-top: 2.5rem;
   color: #05486b;
 }
 
 .about__img-item {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   border-radius: 0.25rem;
+  border: 0.1rem solid #05486b;
 }
 
 .about__presentation-container {
@@ -549,4 +552,62 @@ body {
 }
 
 /* end-about */
+.map {
+  width: 100%;
+  margin: 2.7rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map-item {
+  width: 95vw;
+  min-height: 50vh;
+  border-radius: 0.3rem;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background-color: #1a1a1d;
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__copyrights {
+  margin-top: 2.5rem;
+}
+
+.footer__copy {
+  color: #e3e2df;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__header-quaternary {
+  color: #e3e2df;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: 0.3rem;
+  text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

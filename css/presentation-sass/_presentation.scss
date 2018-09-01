@@ -43,6 +43,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+    overflow: hidden;
   }
 
   .grid-container {
@@ -88,6 +89,10 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 4rem;
+
+    @media screen and (max-width: 768px) {
+      align-items: flex-start;
+    }
   }
 
   &__contact {
@@ -99,12 +104,20 @@
   &__experience {
     width: 37rem;
     outline: none;
+
+    @media screen and (max-width: 768px) {
+      width: 30rem;
+    }
   }
 
   &__what {
     margin-top: 1.5rem;
     width: 45rem;
     outline: none;
+
+    @media screen and (max-width: 768px) {
+      width: 30rem;
+    }
   }
 }
 

@@ -11,13 +11,13 @@
 
   /* Banner */
   &__banner {
-    width: 60%;
+    width: 100%;
     border-radius: 0.3rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 30vh;
+    min-height: 30vh;
   }
 
   &__title {
@@ -29,6 +29,10 @@
     text-align: center;
     display: block;
     animation: bannerTitle 0.8s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 4.5rem;
+    }
   }
   &__banner-links {
     padding: 1rem;
@@ -36,6 +40,11 @@
     align-items: center;
     margin-top: 1.8rem;
     animation: bannerLinks 0.8s ease-in-out;
+
+    @media screen and (max-width: 768px) {
+      font-size: 4.5rem;
+      flex-direction: column;
+    }
   }
 
   &__banner-link {
@@ -57,6 +66,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.2rem;
+    }
   }
 
   &__banner--contact:hover {
@@ -81,6 +94,11 @@
     color: $light-grey;
     margin: 0 3rem;
     letter-spacing: 0.2rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.8rem;
+      margin: 1.5rem 3rem;
+    }
   }
   /* End Banner */
 
@@ -213,6 +231,10 @@
     margin-right: 0.5rem;
     width: 10%;
     font-size: 2.3rem;
+
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
   }
 
   &__link:link,

@@ -125,7 +125,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .header__title {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
   }
 }
 
@@ -210,7 +210,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .header__banner-number {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     margin: 1.5rem 3rem;
   }
 }
@@ -238,7 +238,7 @@ body {
   -webkit-transition: opacity 0.3s linear;
   transition: opacity 0.3s linear;
   outline: none;
-  z-index: 500;
+  z-index: 1500;
 }
 
 .header .menu__one {
@@ -338,6 +338,12 @@ body {
   transition: transform 0.5s ease-in-out;
   transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   z-index: 999;
+}
+
+@media screen and (max-width: 500px) {
+  .header__navbar {
+    width: 100%;
+  }
 }
 
 .header .show-navbar {

@@ -31,7 +31,7 @@
     animation: bannerTitle 0.8s ease-in-out;
 
     @media screen and (max-width: 768px) {
-      font-size: 4.5rem;
+      font-size: 3.8rem;
     }
   }
   &__banner-links {
@@ -96,7 +96,7 @@
     letter-spacing: 0.2rem;
 
     @media screen and (max-width: 768px) {
-      font-size: 2.8rem;
+      font-size: 2.4rem;
       margin: 1.5rem 3rem;
     }
   }
@@ -119,7 +119,7 @@
     opacity: 0.8;
     transition: opacity 0.3s linear;
     outline: none;
-    z-index: 500;
+    z-index: 1500;
 
     &__one {
       width: 50%;
@@ -201,6 +201,10 @@
     transform: translate(-100%);
     transition: transform 0.5s ease-in-out;
     z-index: 999;
+
+    @media screen and (max-width: 500px) {
+      width: 100%;
+    }
   }
 
   /* navbar show */

@@ -5,12 +5,94 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts-awesome/css/all.css">
+    <link rel="stylesheet" href="./css/main-sass/main.css">
+    <title>Contact - Greenway property development</title>
 </head>
 
 <body>
 
+    <!-- Preloader -->
+    <div class="preloader">
+        <img src="./img/loading.gif" alt="" class="preloader-loading">
+    </div>
+    <!-- End Preloader -->
 
+    <!-- menu-burger -->
+    <div class="menu">
+        <div class="menu__one"></div>
+        <!-- <div class="menu__two"></div> -->
+    </div>
+    <!-- menu-burger -->
+
+    <!-- Navbar -->
+    <nav class="header__navbar">
+        <img src="./img/headerLogo.jpg" alt="" class="header__logo">
+        <ul class="header__list">
+            <li class="header__item">
+                <a href="/index.html" class="header__link">
+                    Home
+                    <i class="fas fa-home header__icon"></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">
+                    What we do
+                    <i class="fas fa-building header__icon"></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link">
+                    Our Team
+                    <i class="fas fa-users header__icon"></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="#" class="header__link ">
+                    Work Experience
+                    <i class="fas fa-file-contract header__icon"></i>
+                </a>
+            </li>
+            <li class="header__item">
+                <a href="/page/contact.html" class="header__link">
+                    Contact
+                    <i class="fas fa-user-alt header__icon"></i>
+                </a>
+            </li>
+        </ul>
+
+        <span class="header__number">
+            <i class="fas fa-phone header__icon"></i>
+            004141321421</span>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="footer__certificates">
+            <img src="/img/certificate-1.jpg" alt="" class="footer__certificates-item">
+            <img src="/img/certificate-2.jpg" alt="" class="footer__certificates-item">
+            <img src="/img/certificate-3.jpg" alt="" class="footer__certificates-item">
+            <img src="/img/certificate-4.jpg" alt="" class="footer__certificates-item">
+            <img src="/img/certificate-5.jpg" alt="" class="footer__certificates-item">
+        </div>
+        <div class="footer__copyrights">
+            <p class="footer__copy">Greenway Property Development. All rights reserved -
+                <span id="footer__date"></span>
+                &copy;
+            </p>
+            <h4 class="footer__header-quaternary">Registered in England...</h4>
+            <h4 class="footer__header-quaternary">VAT Registration:</h4>
+        </div>
+
+    </section>
+    <!-- end footer -->
+
+
+    <script src="./src/index.js"></script>
+    <script>window.onload = navbarInit</script>
 
 </body>
 

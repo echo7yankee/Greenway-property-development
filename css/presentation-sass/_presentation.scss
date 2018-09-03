@@ -8,6 +8,7 @@
   grid-template-columns: 100%;
   grid-template-rows: auto 1fr;
   min-height: 60vw;
+  grid-row-gap: 4rem;
 }
 
 /* hide && show about */
@@ -42,7 +43,7 @@
   .grid-container--medium-2 {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
+    grid-gap: 4rem;
     overflow: hidden;
   }
 
@@ -80,6 +81,7 @@
     display: block;
     border-radius: 0.25rem;
     border: 0.1rem solid $deepSky-blue;
+    object-fit: cover;
   }
 
   &__presentation-container {
@@ -95,29 +97,11 @@
     }
   }
 
-  &__contact {
-    width: 23rem;
+  &__visit-buttons {
+    width: 100%;
+    height: 5.5rem;
     margin-bottom: 1.5rem;
     outline: none;
-  }
-
-  &__experience {
-    width: 37rem;
-    outline: none;
-
-    @media screen and (max-width: 768px) {
-      width: 30rem;
-    }
-  }
-
-  &__what {
-    margin-top: 1.5rem;
-    width: 45rem;
-    outline: none;
-
-    @media screen and (max-width: 768px) {
-      width: 30rem;
-    }
   }
 }
 

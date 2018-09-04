@@ -115,6 +115,13 @@ body {
           animation: bannerTitle 0.8s ease-in-out;
 }
 
+@media screen and (max-width: 992px) {
+  .header__title {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header__title {
     font-size: 3.8rem;
@@ -132,6 +139,13 @@ body {
   margin-top: 1.8rem;
   -webkit-animation: bannerLinks 0.8s ease-in-out;
           animation: bannerLinks 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .header__banner-links {
+    -webkit-animation: none;
+            animation: none;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -179,6 +193,12 @@ body {
   background-color: #509227;
 }
 
+@media screen and (max-width: 992px) {
+  .header__banner--contact:hover {
+    background-color: #62a836;
+  }
+}
+
 .header__banner--fb:link, .header__banner--fb:visited {
   display: inline-block;
   font-size: 4rem;
@@ -195,6 +215,12 @@ body {
 
 .header__banner--fb:hover {
   color: #233968;
+}
+
+@media screen and (max-width: 992px) {
+  .header__banner--fb:hover {
+    color: #3b5998;
+  }
 }
 
 .header__banner-number {
@@ -313,6 +339,12 @@ body {
   background-color: #509227;
 }
 
+@media screen and (max-width: 992px) {
+  .menu:hover {
+    background-color: #62a836;
+  }
+}
+
 /* End Menu */
 /* Navbar */
 .header__navbar {
@@ -424,27 +456,38 @@ body {
   padding-left: 2.5rem;
 }
 
+@media screen and (max-width: 992px) {
+  .header__link:hover {
+    background-color: transparent;
+    padding: 1rem 1.4rem;
+  }
+}
+
 .header__number {
+  display: block;
   width: 100%;
-  text-align: center;
-  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
   color: #e3e2df;
-  letter-spacing: 0.2rem;
+  outline: none;
   padding: 1rem 1.4rem;
-  background-color: #05486b;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+  letter-spacing: 0.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #05486b;
 }
 
 /* End Navbar */
@@ -759,6 +802,13 @@ body {
           animation: contactHeader 0.8s ease-in-out;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__header {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .contact__home:link, .contact__home:visited {
   color: none;
   outline: none;
@@ -772,6 +822,18 @@ body {
   display: block;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__header-logo {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__header-logo {
+    width: 11rem;
+  }
+}
+
 .contact__header-primary {
   text-align: center;
   font-size: 8rem;
@@ -779,6 +841,18 @@ body {
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.3rem;
   color: #e3e2df;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__header-primary {
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact__header-primary {
+    font-size: 5rem;
+  }
 }
 
 .contact__container {
@@ -795,6 +869,15 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .contact__contact {
@@ -820,10 +903,25 @@ body {
           animation: contactForm 0.8s ease-in-out;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__leftSide {
+    -webkit-animation: none;
+            animation: none;
+  }
+}
+
 .contact__rightSide {
   border-left: 0.1rem solid #62a836;
   -webkit-animation: contactInfo 0.8s ease-in-out;
           animation: contactInfo 0.8s ease-in-out;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__rightSide {
+    -webkit-animation: none;
+            animation: none;
+    border: none;
+  }
 }
 
 .contact__form {
@@ -841,6 +939,14 @@ body {
           align-items: flex-start;
   min-height: 40vh;
   width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .contact__form-alertContainer {
@@ -919,7 +1025,7 @@ body {
   padding: 0.8rem 1.8rem;
   display: block;
   border: 0.1rem solid #e3e2df;
-  background-color: #62a836;
+  background-color: #05486b;
   color: #e3e2df;
   font-size: 1.7rem;
   border-radius: 0.3rem;
@@ -928,17 +1034,48 @@ body {
   width: 60%;
   -webkit-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
+  outline: none;
 }
 
 .contact__form-submit:hover {
-  background-color: #509227;
+  background-color: #033652;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form-submit:hover {
+    background-color: #05486b;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
 }
 
 .contact__info-primary {
   color: #62a836;
-  font-size: 3.5rem;
+  font-size: 3rem;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info-primary {
+    margin-bottom: 0.8rem;
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .contact__info-padding {
@@ -949,8 +1086,26 @@ body {
   margin-top: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__info-address {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contact__info-ternary {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #05486b;
 }
 
@@ -964,9 +1119,52 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__info-text {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info-support {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .contact__info-email:link, .contact__info-email:visited {
   color: #05486b;
   text-transform: initial;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__info-schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .success {
@@ -1072,7 +1270,7 @@ body {
 .location__header {
   text-align: center;
   margin-bottom: 4rem;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #62a836;
   font-family: "Oswald", sans-serif;
   letter-spacing: 0.1rem;

@@ -31,6 +31,10 @@
     display: block;
     animation: bannerTitle 0.8s ease-in-out;
 
+    @media screen and (max-width: 992px) {
+      animation: none;
+    }
+
     @media screen and (max-width: 768px) {
       font-size: 3.8rem;
     }
@@ -41,6 +45,10 @@
     align-items: center;
     margin-top: 1.8rem;
     animation: bannerLinks 0.8s ease-in-out;
+
+    @media screen and (max-width: 992px) {
+      animation: none;
+    }
 
     @media screen and (max-width: 768px) {
       font-size: 4.5rem;
@@ -74,6 +82,9 @@
 
   &__banner--contact:hover {
     background-color: $nature-darkGreen;
+    @media screen and (max-width: 992px) {
+      background-color: $nature-green;
+    }
   }
 
   &__banner--fb:link,
@@ -89,6 +100,9 @@
 
   &__banner--fb:hover {
     color: #233968;
+    @media screen and (max-width: 992px) {
+      color: #3b5998;
+    }
   }
 
   &__banner-number {
@@ -191,6 +205,9 @@
 
 .menu:hover {
   background-color: $nature-darkGreen;
+  @media screen and (max-width: 992px) {
+    background-color: $nature-green;
+  }
 }
 /* End Menu */
 
@@ -270,19 +287,27 @@
 .header__link:hover {
   background-color: $deepSky-blue;
   padding-left: 2.5rem;
+
+  @media screen and (max-width: 992px) {
+    background-color: transparent;
+    padding: 1rem 1.4rem;
+  }
 }
 
 .header__number {
+  display: block;
   width: 100%;
-  text-align: center;
-  font-size: 2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
   color: $light-grey;
-  letter-spacing: 0.2rem;
+  outline: none;
   padding: 1rem 1.4rem;
-  background-color: $deepSky-blue;
+  transition: all 0.15s linear;
+  letter-spacing: 0.1rem;
   display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
   justify-content: space-between;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: $deepSky-blue;
 }
 /* End Navbar */

@@ -984,6 +984,12 @@ body {
   font-weight: bold;
 }
 
+@media screen and (max-width: 992px) {
+  .contact__form-label {
+    width: 100%;
+  }
+}
+
 .contact__form-input {
   width: 100%;
   height: 5rem;
@@ -1035,6 +1041,12 @@ body {
   -webkit-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
   outline: none;
+}
+
+@media screen and (max-width: 992px) {
+  .contact__form-submit {
+    width: 100%;
+  }
 }
 
 .contact__form-submit:hover {

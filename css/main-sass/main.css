@@ -1067,6 +1067,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   min-height: 50vh;
@@ -1108,7 +1111,7 @@ body {
 }
 
 .contact__info-address {
-  margin-top: 3rem;
+  margin-top: 0.8rem;
 }
 
 @media screen and (max-width: 992px) {

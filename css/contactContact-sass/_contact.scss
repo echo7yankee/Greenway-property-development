@@ -188,6 +188,7 @@
   &__info {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     justify-content: space-around;
     min-height: 50vh;
     @media screen and (max-width: 992px) {
@@ -216,7 +217,7 @@
   }
 
   &__info-address {
-    margin-top: 3rem;
+    margin-top: 0.8rem;
     @media screen and (max-width: 992px) {
       display: flex;
       flex-direction: column;

@@ -43,7 +43,7 @@ function indexInit() {
 
   class UiHome {
     showAbout() {
-      if (window.scrollY > leftAboutTop / 1.25) {
+      if (window.scrollY > leftAboutTop / 2.5) {
         leftAbout.classList.add("show-about");
         rightAbout.classList.add("show-about");
       }

@@ -1,10 +1,14 @@
 @import "../base-sass/base";
 
-@import "../header-sass/header";
-@import "../header-sass/animations";
+@import "../indexHeader-sass/header";
+@import "../IndexHeader-sass/animations";
 
-@import "../presentation-sass/presentation";
+@import "../indexPresentation-sass/presentation";
 
-@import "../map-sass/map";
+@import "../indexMap-sass/map";
 
 @import "../footer-sass/footer";
+
+@import "../contactContact-sass/contact";
+@import "../contactContact-sass/contactAnimations";
+@import "../contactLocation-sass/location";

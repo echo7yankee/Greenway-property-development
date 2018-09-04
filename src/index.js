@@ -59,3 +59,38 @@ function indexInit() {
   navbarInit();
   dynamicDate();
 }
+
+function contactInit() {
+  const form = document.querySelector(".contact__form");
+  const inputName = document.getElementById("input-name");
+  const inputEmail = document.getElementById("input-email");
+  const inputMessage = document.getElementById("input-message");
+  const parentMesage = document.querySelector(".contact__form-alertContainer");
+
+  const alertMessage = document.createElement("p");
+  alertMessage.classList.add("contact__form-alert");
+  parentMesage.appendChild(alertMessage);
+
+  function alertText(type) {
+    if (type === "success") {
+      alertMessage.classList.remove("error");
+      alertMessage.classList.add("success");
+      alertMessage.textContent = "Your message has been sent";
+    } else if (type === "error") {
+      alertMessage.classList.remove("success");
+      alertMessage.classList.add("error");
+      alertMessage.textContent = "Please complete all the fields";
+    }
+  }
+
+  form.addEventListener("submit", e => {
+    if (inputName.value === "" && inputEmail.value === "") {
+      e.preventDefault();
+      alertText("error");
+    } else {
+      alertText("success");
+    }
+  });
+
+  navbarInit();
+}

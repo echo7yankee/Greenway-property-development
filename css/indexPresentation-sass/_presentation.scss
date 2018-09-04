@@ -60,12 +60,15 @@
     font-size: 3.5rem;
     text-transform: capitalize;
     color: $nature-green;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.1rem;
   }
 
   &__title-underline {
     background: $nature-green;
     width: 10rem;
     padding: 0.1rem;
+    display: inline-block;
   }
 
   &__title-text {

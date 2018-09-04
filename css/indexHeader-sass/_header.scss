@@ -26,7 +26,7 @@
     font-size: 6rem;
     letter-spacing: 0.2rem;
     color: $light-grey;
-    font-weight: 400;
+    font-weight: 300;
     text-align: center;
     display: block;
     animation: bannerTitle 0.8s ease-in-out;
@@ -225,12 +225,13 @@
   width: 15rem;
   height: auto;
   object-fit: cover;
+  display: block;
 }
 
 .header__list {
   list-style: none;
   width: 100%;
-  flex: 0 0 35%;
+  flex: 0 0 40%;
 }
 
 .header__item {

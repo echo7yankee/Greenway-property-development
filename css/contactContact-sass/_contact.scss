@@ -2,59 +2,6 @@
 .contact {
   width: 100%;
 
-  &__header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    background-color: $nature-green;
-    min-height: 25vh;
-    margin-bottom: 8rem;
-    animation: contactHeader 0.8s ease-in-out;
-
-    @media screen and (max-width: 992px) {
-      animation: none;
-    }
-  }
-
-  &__home:link,
-  &__home:visited {
-    color: none;
-    outline: none;
-  }
-
-  &__header-logo {
-    width: 14rem;
-    height: auto;
-    object-fit: cover;
-    display: block;
-
-    @media screen and (max-width: 992px) {
-      width: 12rem;
-    }
-
-    @media screen and (max-width: 768px) {
-      width: 11rem;
-    }
-  }
-
-  &__header-primary {
-    text-align: center;
-    font-size: 8rem;
-    font-weight: 300;
-    font-family: "Oswald", sans-serif;
-    letter-spacing: 0.3rem;
-    color: $light-grey;
-
-    @media screen and (max-width: 992px) {
-      font-size: 6rem;
-    }
-    @media screen and (max-width: 768px) {
-      font-size: 5rem;
-    }
-  }
-
   &__container {
     margin-top: 6rem;
     max-width: 95vw;
@@ -81,7 +28,7 @@
 
   &__leftSide {
     animation: contactForm 0.8s ease-in-out;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       animation: none;
     }
   }
@@ -89,7 +36,7 @@
   &__rightSide {
     border-left: 0.1rem solid $nature-green;
     animation: contactInfo 0.8s ease-in-out;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       animation: none;
       border: none;
     }
@@ -120,6 +67,10 @@
     font-family: "Oswald", sans-serif;
     letter-spacing: 0.1rem;
     display: inline-block;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
   }
 
   &__form-label {
@@ -180,7 +131,7 @@
 
   &__form-submit:hover {
     background-color: $deepSky-darkBlue;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       background-color: $deepSky-blue;
     }
   }
@@ -271,6 +222,62 @@
   }
 }
 // End Banner Contact
+
+//Header
+.contact__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: $nature-green;
+  min-height: 25vh;
+  margin-bottom: 8rem;
+  animation: contactHeader 0.8s ease-in-out;
+
+  @media screen and (max-width: 992px) {
+    animation: none;
+  }
+}
+
+.contact__home:link,
+.contact__home:visited {
+  color: none;
+  outline: none;
+}
+
+.contact__header-logo {
+  width: 14rem;
+  height: auto;
+  object-fit: cover;
+  display: block;
+
+  @media screen and (max-width: 992px) {
+    width: 12rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 11rem;
+  }
+}
+
+.contact__header-primary {
+  text-align: center;
+  font-size: 6rem;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.3rem;
+  color: $light-grey;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 992px) {
+    font-size: 4.6rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 3.8rem;
+  }
+}
+//Header
 
 //Form error or success classes
 .success {

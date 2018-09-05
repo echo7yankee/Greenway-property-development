@@ -31,7 +31,7 @@
     display: block;
     animation: bannerTitle 0.8s ease-in-out;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       animation: none;
     }
 
@@ -46,7 +46,7 @@
     margin-top: 1.8rem;
     animation: bannerLinks 0.8s ease-in-out;
 
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       animation: none;
     }
 
@@ -100,7 +100,7 @@
 
   &__banner--fb:hover {
     color: #233968;
-    @media screen and (max-width: 992px) {
+    @media screen and (max-width: 1024px) {
       color: #3b5998;
     }
   }
@@ -136,9 +136,6 @@
   transition: background-color 0.1s linear;
   outline: none;
   z-index: 1500;
-
-  @media screen and (max-width: 992px) {
-  }
 
   &__one {
     width: 50%;
@@ -208,7 +205,7 @@
 
 .menu:hover {
   background-color: $nature-darkGreen;
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     background-color: $nature-green;
   }
 }
@@ -291,7 +288,7 @@
   background-color: $deepSky-blue;
   padding-left: 2.5rem;
 
-  @media screen and (max-width: 992px) {
+  @media screen and (max-width: 1024px) {
     background-color: transparent;
     padding: 1rem 1.4rem;
   }

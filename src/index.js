@@ -40,10 +40,11 @@ function indexInit() {
   const leftAbout = document.querySelector(".hide-left");
   let leftAboutTop = leftAbout.getBoundingClientRect().top;
   const rightAbout = document.querySelector(".hide-right");
+  const scrollDivide = 2.5;
 
   class UiHome {
     showAbout() {
-      if (window.scrollY > leftAboutTop / 2.5) {
+      if (window.scrollY > leftAboutTop / scrollDivide) {
         leftAbout.classList.add("show-about");
         rightAbout.classList.add("show-about");
       }
@@ -90,6 +91,34 @@ function contactInit() {
     } else {
       alertText("success");
     }
+  });
+
+  navbarInit();
+}
+
+function whatWeDo() {
+  const capabilitiesLeft = document.querySelectorAll(".capabilities__leftSide");
+  const capabilitiesRight = document.querySelectorAll(
+    ".capabilities__rightSide"
+  );
+  const scrollDivide = 2;
+
+  capabilitiesLeft.forEach(capability => {
+    const capabalityTop = capability.getBoundingClientRect().top;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > capabalityTop / scrollDivide) {
+        capability.classList.add("show-capabilities");
+      }
+    });
+  });
+
+  capabilitiesRight.forEach(capability => {
+    const capabalityTop = capability.getBoundingClientRect().top;
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > capabalityTop / scrollDivide) {
+        capability.classList.add("show-capabilities");
+      }
+    });
   });
 
   navbarInit();

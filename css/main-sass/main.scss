@@ -1,14 +1,25 @@
+//Global Base
 @import "../base-sass/base";
 
+//Index Header && animations
 @import "../indexHeader-sass/header";
 @import "../IndexHeader-sass/animations";
 
+//Index presentation
 @import "../indexPresentation-sass/presentation";
 
+//Global Map
 @import "../indexMap-sass/map";
 
+//Global Footer
 @import "../footer-sass/footer";
 
+//Contact
 @import "../contactContact-sass/contact";
 @import "../contactContact-sass/contactAnimations";
 @import "../contactLocation-sass/location";
+
+//WhatWeDo
+@import "../whatWeDoIntro-sass/intro";
+@import "../whatWeDoIntro-sass/animations";
+@import "../whatWeDoAbilities-sass/abilities";

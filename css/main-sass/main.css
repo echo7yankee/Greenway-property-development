@@ -1317,7 +1317,7 @@ body {
 }
 
 .introduction__container {
-  max-width: 50vw;
+  max-width: 60vw;
   min-height: 60vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -1341,46 +1341,35 @@ body {
   .introduction__container {
     -webkit-animation: none;
             animation: none;
-    max-width: 80vw;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .introduction__container {
-    -webkit-animation: none;
-            animation: none;
     max-width: 95vw;
   }
 }
 
 .introduction__underline {
-  width: 80%;
+  width: 95%;
   margin: 6rem auto;
   background-color: #e0e0e0;
   padding: 0.1rem;
 }
 
 .introduction__img-container {
-  overflow: hidden;
   margin-bottom: 4rem;
+  width: 100%;
+  min-height: 60vh;
+  background-image: url("../../img/introduction.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 1024px) {
   .introduction__img-container {
     -webkit-animation: none;
             animation: none;
-    max-width: 80vw;
+    max-width: 90vw;
   }
-}
-
-.introduction__img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 0.25rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border: 0.1rem solid #e0e0e0;
 }
 
 .introduction__text {
@@ -1388,6 +1377,13 @@ body {
   font-size: 1.7rem;
   color: #05486b;
   letter-spacing: 0.1rem;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .introduction__text {
+    width: 95%;
+  }
 }
 
 @-webkit-keyframes showIntroduction {

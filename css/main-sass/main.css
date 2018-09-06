@@ -113,6 +113,7 @@ body {
   display: block;
   -webkit-animation: bannerTitle 0.8s ease-in-out;
           animation: bannerTitle 0.8s ease-in-out;
+  text-transform: uppercase;
 }
 
 @media screen and (max-width: 1024px) {
@@ -1106,6 +1107,11 @@ body {
   color: #05486b;
   text-transform: initial;
   text-align: center;
+  text-decoration: none;
+}
+
+.contact__info-email:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 992px) {
@@ -1312,12 +1318,16 @@ body {
   letter-spacing: 0.1rem;
 }
 
+.header__margin--0 {
+  margin: 0;
+}
+
 .introduction {
   width: 100%;
 }
 
 .introduction__container {
-  max-width: 60vw;
+  width: 100%;
   min-height: 60vh;
   margin: 0 auto;
   display: -webkit-box;
@@ -1341,7 +1351,7 @@ body {
   .introduction__container {
     -webkit-animation: none;
             animation: none;
-    max-width: 95vw;
+    width: 100%;
   }
 }
 
@@ -1355,26 +1365,64 @@ body {
 .introduction__img-container {
   margin-bottom: 4rem;
   width: 100%;
-  min-height: 60vh;
-  background-image: url("../../img/introduction.jpeg");
+  min-height: 50vh;
+  background-image: url("../../img/whatWeDoIntro.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center;
   -o-object-fit: cover;
      object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 1rem;
 }
 
 @media screen and (max-width: 1024px) {
   .introduction__img-container {
     -webkit-animation: none;
             animation: none;
-    max-width: 90vw;
+    width: 100%;
+  }
+}
+
+.introduction__header {
+  font-size: 4.5rem;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #e3e2df;
+  padding: 1rem 2rem;
+  width: 30%;
+  text-align: center;
+  background-color: rgba(98, 168, 54, 0.6);
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .introduction__header {
+    font-size: 3.8rem;
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .introduction__header {
+    font-size: 3.8rem;
+    width: 80%;
   }
 }
 
 .introduction__text {
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   color: #05486b;
   letter-spacing: 0.1rem;
   width: 50%;
@@ -1392,10 +1440,6 @@ body {
             transform: translateY(100%);
     opacity: 0;
   }
-  50% {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
-  }
   100% {
     -webkit-transform: translateY(0%);
             transform: translateY(0%);
@@ -1408,10 +1452,6 @@ body {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
     opacity: 0;
-  }
-  50% {
-    -webkit-transform: translateY(-15%);
-            transform: translateY(-15%);
   }
   100% {
     -webkit-transform: translateY(0%);
@@ -1431,9 +1471,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 3rem 0;
   overflow: hidden;
 }
@@ -1453,20 +1493,27 @@ body {
 }
 
 .capabilities__img-container {
-  width: 100%;
+  width: 60%;
   margin-right: 2rem;
-  min-height: 40vh;
 }
 
 @media screen and (max-width: 1400px) {
   .capabilities__img-container {
     min-height: 30vh;
+    width: 70%;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .capabilities__img-container {
     min-height: 25vh;
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .capabilities__img-container {
+    width: 100%;
   }
 }
 
@@ -1488,7 +1535,7 @@ body {
 
 .capabilities__img {
   width: 100%;
-  height: 100%;
+  height: auto;
   -o-object-fit: cover;
      object-fit: cover;
   display: block;
@@ -1549,5 +1596,48 @@ body {
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
   opacity: 1;
+}
+
+.goTo {
+  margin-top: 6rem;
+  width: 100%;
+  min-height: 15vh;
+}
+
+.goTo .goTo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.8rem;
+}
+
+.goTo .goTo-text {
+  font-size: 3rem;
+  color: #05486b;
+  text-transform: uppercase;
+  margin-right: 3rem;
+}
+
+.goTo .goTo-link {
+  text-transform: uppercase;
+  height: 6rem;
+  width: 30%;
+}
+
+.header__margin--0 {
+  margin: 0;
+}
+
+.introduction__img {
+  background-image: url("../../img/experienceBcg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */

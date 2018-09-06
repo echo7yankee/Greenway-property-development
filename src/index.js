@@ -123,3 +123,7 @@ function whatWeDo() {
 
   navbarInit();
 }
+
+function experience() {
+  navbarInit();
+}

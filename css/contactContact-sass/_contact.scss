@@ -210,6 +210,11 @@
     color: $deepSky-blue;
     text-transform: initial;
     text-align: center;
+    text-decoration: none;
+  }
+
+  &__info-email:hover {
+    text-decoration: underline;
   }
 
   &__info-schedule {

@@ -30,6 +30,7 @@
     text-align: center;
     display: block;
     animation: bannerTitle 0.8s ease-in-out;
+    text-transform: uppercase;
 
     @media screen and (max-width: 1024px) {
       animation: none;

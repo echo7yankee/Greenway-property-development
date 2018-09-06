@@ -1,8 +1,12 @@
+.header__margin--0 {
+  margin: 0;
+}
+
 .introduction {
   width: 100%;
 
   &__container {
-    max-width: 60vw;
+    width: 100%;
     min-height: 60vh;
     margin: 0 auto;
     display: flex;
@@ -13,7 +17,7 @@
 
     @media screen and (max-width: 1024px) {
       animation: none;
-      max-width: 95vw;
+      width: 100%;
     }
   }
 
@@ -27,22 +31,50 @@
   &__img-container {
     margin-bottom: 4rem;
     width: 100%;
-    min-height: 60vh;
-    background-image: url("../../img/introduction.jpeg");
+    min-height: 50vh;
+    background-image: url("../../img/whatWeDoIntro.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: center;
     object-fit: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1rem;
 
     @media screen and (max-width: 1024px) {
       animation: none;
-      max-width: 90vw;
+      width: 100%;
+    }
+  }
+
+  &__header {
+    font-size: 4.5rem;
+    font-family: "Oswald", sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $light-grey;
+    padding: 1rem 2rem;
+    width: 30%;
+    text-align: center;
+    background-color: rgba(98, 168, 54, 0.6);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+
+    @media screen and (max-width: 992px) {
+      font-size: 3.8rem;
+      width: 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 3.8rem;
+      width: 80%;
     }
   }
 
   &__text {
     text-align: center;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     color: $deepSky-blue;
     letter-spacing: 0.1rem;
     width: 50%;

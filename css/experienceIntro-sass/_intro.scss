@@ -1,0 +1,12 @@
+.header__margin--0 {
+  margin: 0;
+}
+
+.introduction {
+  &__img {
+    background-image: url("../../img/experienceBcg.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

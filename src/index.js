@@ -65,8 +65,10 @@ function contactInit() {
   const form = document.querySelector(".contact__form");
   const inputName = document.getElementById("input-name");
   const inputEmail = document.getElementById("input-email");
-  const inputMessage = document.getElementById("input-message");
+  const inputMessage = document.querySelector(".input-msg");
+  const inputSubject = document.getElementById("input-subject");
   const parentMesage = document.querySelector(".contact__form-alertContainer");
+  console.log(inputMessage);
 
   const alertMessage = document.createElement("p");
   alertMessage.classList.add("contact__form-alert");
@@ -85,7 +87,24 @@ function contactInit() {
   }
 
   form.addEventListener("submit", e => {
-    if (inputName.value === "" && inputEmail.value === "") {
+    if (
+      inputName.value === "" &&
+      inputEmail.value === "" &&
+      inputSubject.value === "" &&
+      inputMessage.value === ""
+    ) {
+      e.preventDefault();
+      alertText("error");
+    } else if (inputEmail.value === "") {
+      e.preventDefault();
+      alertText("error");
+    } else if (inputName.value === "") {
+      e.preventDefault();
+      alertText("error");
+    } else if (inputSubject.value === "") {
+      e.preventDefault();
+      alertText("error");
+    } else if (inputMessage.value === "") {
       e.preventDefault();
       alertText("error");
     } else {
@@ -129,13 +148,17 @@ function experience() {
 }
 
 function ourTeam() {
-  const cards = document.querySelectorAll(".team__card");
-  const cardImgs = document.querySelectorAll(".team__img");
+  /*   const cards = document.querySelectorAll(".team__card"); */
+  const cards = document.querySelectorAll(".team__card-column");
 
   function enterHandler() {
+    this.classList.add("active-card");
+    this.classList.add("active-about");
     this.classList.add("active-img");
   }
   function leaveHandler() {
+    this.classList.remove("active-card");
+    this.classList.remove("active-about");
     this.classList.remove("active-img");
   }
 

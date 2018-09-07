@@ -78,7 +78,7 @@ function contactInit() {
     if (type === "success") {
       alertMessage.classList.remove("error");
       alertMessage.classList.add("success");
-      alertMessage.textContent = "Your message has been sent";
+      alertMessage.textContent = "Proceed further to confirm your message";
     } else if (type === "error") {
       alertMessage.classList.remove("success");
       alertMessage.classList.add("error");

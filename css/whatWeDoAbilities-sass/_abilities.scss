@@ -112,6 +112,10 @@
     justify-content: center;
     align-items: center;
     padding: 0.8rem;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
   }
 
   .goTo-text {
@@ -119,11 +123,27 @@
     color: $deepSky-blue;
     text-transform: uppercase;
     margin-right: 3rem;
+
+    @media screen and (max-width: 992px) {
+      margin-bottom: 2.5rem;
+      font-size: 2.5rem;
+      text-align: center;
+    }
   }
 
   .goTo-link {
     text-transform: uppercase;
     height: 6rem;
     width: 30%;
+
+    @media screen and (max-width: 992px) {
+      height: 5rem;
+      width: 70%;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 5rem;
+      width: 95%;
+    }
   }
 }

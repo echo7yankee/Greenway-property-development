@@ -173,7 +173,7 @@ body {
   border: 0.1rem solid #e3e2df;
   background-color: #62a836;
   font-size: 2.2rem;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   -webkit-transition: background-color 0.1s ease-in-out;
   transition: background-color 0.1s ease-in-out;
   display: -webkit-box;
@@ -968,7 +968,7 @@ body {
   background-color: #05486b;
   color: #e3e2df;
   font-size: 1.7rem;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   cursor: pointer;
   font-weight: bold;
   width: 60%;
@@ -1620,6 +1620,15 @@ body {
   padding: 0.8rem;
 }
 
+@media screen and (max-width: 992px) {
+  .goTo .goTo-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .goTo .goTo-text {
   font-size: 3rem;
   color: #05486b;
@@ -1627,10 +1636,32 @@ body {
   margin-right: 3rem;
 }
 
+@media screen and (max-width: 992px) {
+  .goTo .goTo-text {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
 .goTo .goTo-link {
   text-transform: uppercase;
   height: 6rem;
   width: 30%;
+}
+
+@media screen and (max-width: 992px) {
+  .goTo .goTo-link {
+    height: 5rem;
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .goTo .goTo-link {
+    height: 5rem;
+    width: 95%;
+  }
 }
 
 .header__margin--0 {

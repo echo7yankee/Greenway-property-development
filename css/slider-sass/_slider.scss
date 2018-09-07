@@ -1,0 +1,123 @@
+.slider {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  &__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ccc;
+    display: flex;
+
+    @media screen and (max-width: 992px) {
+      flex-direction: column;
+    }
+  }
+
+  &__item {
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    border-right: 1px solid #000;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+    overflow: hidden;
+
+    @media screen and (max-width: 992px) {
+      width: 100%;
+      height: 20%;
+    }
+  }
+
+  &__item:nth-child(1) {
+    background: url("../../img/slider-1.jpeg");
+    object-fit: cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  &__item:nth-child(2) {
+    background: url("../../img/slider-2.jpeg");
+    object-fit: cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  &__item:nth-child(3) {
+    background: url("../../img/slider-3.jpeg");
+    object-fit: cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  &__item:nth-child(4) {
+    background: url("../../img/slider-4.jpeg");
+    object-fit: cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: left;
+  }
+  &__item:nth-child(5) {
+    background: url("../../img/slider-5.jpeg");
+    object-fit: cover;
+    background-repeat: no repeat;
+    background-size: cover;
+    background-position: left;
+  }
+
+  &__list:hover li {
+    width: 10%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+
+  &__list li:hover {
+    width: 60%;
+    @media screen and (max-width: 992px) {
+      height: 40%;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    box-sizing: border-box;
+    color: $light-grey;
+    opacity: 0;
+  }
+
+  &__header {
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    letter-spacing: 0.1rem;
+    color: $nature-green;
+    @media screen and (max-width: 768px) {
+      font-size: 2.2rem;
+    }
+  }
+
+  &__text {
+    font-size: 1.8rem;
+    @media screen and (max-width: 768px) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__list .slider__item:hover .slider__content {
+    bottom: 0;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    opacity: 1;
+  }
+}

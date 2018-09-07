@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    animation: showIntroduction 0.8s ease-in-out;
+    animation: showIntroduction 0.8s;
 
     @media screen and (max-width: 1024px) {
       animation: none;

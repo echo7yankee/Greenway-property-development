@@ -40,13 +40,13 @@
   &__leftSide {
     transform: translateX(-150%);
     opacity: 0;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.8s;
   }
 
   &__rightSide {
     transform: translateX(150%);
     opacity: 0;
-    transition: all 0.8s ease-in-out;
+    transition: all 0.8s;
   }
 
   &__img {

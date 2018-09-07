@@ -225,7 +225,7 @@
   flex-direction: column;
   align-items: center;
   transform: translate(-100%);
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s;
   z-index: 999;
 
   @media screen and (max-width: 768px) {

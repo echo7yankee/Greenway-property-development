@@ -15,13 +15,13 @@
 .hide-left {
   transform: translateX(-150%);
   opacity: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s;
 }
 
 .hide-right {
   transform: translateX(150%);
   opacity: 0;
-  transition: all 0.8s ease-in-out;
+  transition: all 0.8s;
 }
 
 .show-about {

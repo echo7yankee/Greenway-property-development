@@ -27,7 +27,7 @@
   }
 
   &__leftSide {
-    animation: contactForm 0.8s ease-in-out;
+    animation: contactForm 0.8s;
     @media screen and (max-width: 1024px) {
       animation: none;
     }
@@ -35,7 +35,7 @@
 
   &__rightSide {
     border-left: 0.1rem solid $nature-green;
-    animation: contactInfo 0.8s ease-in-out;
+    animation: contactInfo 0.8s;
     @media screen and (max-width: 1024px) {
       animation: none;
       border: none;
@@ -239,7 +239,7 @@
   background-color: $nature-green;
   min-height: 25vh;
   margin-bottom: 8rem;
-  animation: contactHeader 0.8s ease-in-out;
+  animation: contactHeader 0.8s;
 
   @media screen and (max-width: 992px) {
     animation: none;

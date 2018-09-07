@@ -127,3 +127,22 @@ function whatWeDo() {
 function experience() {
   navbarInit();
 }
+
+function ourTeam() {
+  const cards = document.querySelectorAll(".team__card");
+  const cardImgs = document.querySelectorAll(".team__img");
+
+  function enterHandler() {
+    this.classList.add("active-img");
+  }
+  function leaveHandler() {
+    this.classList.remove("active-img");
+  }
+
+  cards.forEach(card => {
+    card.addEventListener("mouseenter", enterHandler);
+    card.addEventListener("mouseleave", leaveHandler);
+  });
+
+  navbarInit();
+}

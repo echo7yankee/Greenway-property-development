@@ -1796,7 +1796,7 @@ body {
   bottom: -100%;
   left: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.6);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #e3e2df;
@@ -1823,7 +1823,7 @@ body {
 
 @media screen and (max-width: 768px) {
   .slider__text {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
 }
 

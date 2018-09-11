@@ -239,6 +239,12 @@
 }
 /* end navbar show */
 
+/* Close navbar */
+.close-navbar {
+  transform: translate(-100%);
+}
+/* Close navbar */
+
 .header__logo {
   width: 15rem;
   height: auto;
@@ -312,3 +318,24 @@
   background-color: $deepSky-blue;
 }
 /* End Navbar */
+
+/* overlay */
+@media screen and (min-width: 992px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -3;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .overlay-active {
+    z-index: 800;
+    opacity: 1;
+  }
+}
+/* overlay */

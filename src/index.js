@@ -18,11 +18,20 @@ function navbarInit() {
   const navbar = document.querySelector(".header__navbar");
   const navbarBtn = document.querySelector(".menu");
   const menuAnimate = document.querySelector(".menu__one");
+  const overlay = document.querySelector(".overlay");
+  const headerLink = document.querySelectorAll(".header__link");
+  state = true;
 
   class UiNav {
     showNavbar() {
       navbar.classList.toggle("show-navbar");
       menuAnimate.classList.toggle("menu__two");
+      overlay.classList.toggle("overlay-active");
+    }
+    closeNav() {
+      navbar.classList.remove("show-navbar");
+      menuAnimate.classList.remove("menu__two");
+      overlay.classList.remove("overlay-active");
     }
   }
 
@@ -30,6 +39,14 @@ function navbarInit() {
     const ui = new UiNav();
     //Navbar Btn
     navbarBtn.addEventListener("click", () => ui.showNavbar());
+    overlay.addEventListener("click", () => ui.closeNav());
+    headerLink.forEach(link => {
+      link.addEventListener("click", () => {
+        navbar.classList.remove("show-navbar");
+        menuAnimate.classList.remove("menu__two");
+        overlay.classList.remove("overlay-active");
+      });
+    });
   }
   navEventListeners();
   dynamicDate();

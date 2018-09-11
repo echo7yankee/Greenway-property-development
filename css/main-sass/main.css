@@ -1770,16 +1770,6 @@ body {
   background-position: left;
 }
 
-.slider__list:hover li {
-  width: 10%;
-}
-
-@media screen and (max-width: 992px) {
-  .slider__list:hover li {
-    width: 100%;
-  }
-}
-
 .slider__list li:hover {
   width: 60%;
 }

@@ -71,13 +71,6 @@
     background-position: left;
   }
 
-  &__list:hover li {
-    width: 10%;
-    @media screen and (max-width: 992px) {
-      width: 100%;
-    }
-  }
-
   &__list li:hover {
     width: 60%;
     @media screen and (max-width: 992px) {
